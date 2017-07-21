@@ -14,86 +14,235 @@
 				<b:Heading size="H1" alignment="LEFT" text="Alert Page"/>
 			</b:Column> 
 		</b:Row>	
-	<!-- 				UPPER PART -->
-	
-		<b:Row addStyleNames="{style.column}">
+		
+		
+		<b:Row>
+			<b:Column size="SM_3" >
+				<b:Well addStyleNames="{style.upperWell}">
+					<b:Row addStyleNames="{style.insideWell}">
+					<b:Column size="SM_3" addStyleNames="{style.leftBoxInWell}">
+						<b:Icon type="FLAG" size="TIMES3" inverse="true" addStyleNames="{style.iconInWell}" />
+					</b:Column>
+					<b:Column size="SM_9" addStyleNames="{style.rightBoxInWell}">
+						<b:Heading size="H1" alignment="CENTER" text="22"/>
+						<b:Heading size="H5" alignment="CENTER" text="New alerts the past 3"/>
+					</b:Column>
+					</b:Row>
+				</b:Well>
+			</b:Column>
+			<b:Column size="SM_3" >
+				<b:Well addStyleNames="{style.upperWell}">
+					<b:Row addStyleNames="{style.insideWell}">
+					<b:Column size="SM_3" addStyleNames="{style.leftBoxInWell}">
+						<b:Icon type="WARNING" size="TIMES3" inverse="true" addStyleNames="{style.iconInWell}" />
+					</b:Column>
+					<b:Column size="SM_9" addStyleNames="{style.rightBoxInWell}">
+						<b:Heading size="H1" alignment="CENTER" text="15"/>
+						<b:Heading size="H5" alignment="CENTER" text="Open Alerts"/>
+					</b:Column>
+					</b:Row>
+				</b:Well>
+			</b:Column>
+			<b:Column size="SM_3" >
+				<b:Well addStyleNames="{style.upperWell}">
+					<b:Row addStyleNames="{style.insideWell}">
+					<b:Column size="SM_3" addStyleNames="{style.leftBoxInWell}">
+						<b:Icon type="CHECK" size="TIMES3" inverse="true" addStyleNames="{style.iconInWell}" />
+					</b:Column>
+					<b:Column size="SM_9" addStyleNames="{style.rightBoxInWell}">
+						<b:Heading size="H1" alignment="CENTER" text="32"/>
+						<b:Heading size="H5" alignment="CENTER" text="Alerts handled past 7 days"/>
+					</b:Column>
+					</b:Row>
+				</b:Well>
+			</b:Column>
+			<b:Column size="SM_3" >
+				<b:Well addStyleNames="{style.upperWell}">
+					<b:Row addStyleNames="{style.insideWell}">
+					<b:Column size="SM_3" addStyleNames="{style.leftBoxInWell}">
+						<b:Icon type="THUMBS_UP" size="TIMES3" inverse="true" addStyleNames="{style.iconInWell}" />
+					</b:Column>
+					<b:Column size="SM_9" addStyleNames="{style.rightBoxInWell}">
+						<b:Heading size="H1" alignment="CENTER" text="69"/>
+						<b:Heading size="H5" alignment="CENTER" text="Customers retained past 30 days"/>
+					</b:Column>
+					</b:Row>
+				</b:Well>
+			</b:Column>									
+		</b:Row>
 
 		
+	<!-- 				UPPER PART -->	
+		<b:Row addStyleNames="{style.column}">		
 <!-- 			1st square -->
-				<b:Column size="SM_2"  >
-					<b:Jumbotron addStyleNames="{style.upperSquares}">
-						<b:Row>
-							<b:Heading size="H1" alignment="CENTER" text="22" color="white"/>
-						</b:Row>
-						<b:Row>
-							<b:Heading size="H5" alignment="CENTER" text="New alerts the past 7 days" addStyleNames="{style.upperSquaresDescriptions}"/>
-						</b:Row>						
-					</b:Jumbotron>
-				</b:Column>
+<!-- 				<b:Column size="SM_2"  > -->
+<!-- 					<b:Jumbotron addStyleNames="{style.upperSquares}"> -->
+<!-- 						<b:Row> -->
+<!-- 							<b:Heading size="H1" alignment="CENTER" text="22" color="white"/> -->
+<!-- 						</b:Row> -->
+<!-- 						<b:Row> -->
+<!-- 							<b:Heading size="H5" alignment="CENTER" text="New alerts the past 7 days" addStyleNames="{style.upperSquaresDescriptions}"/> -->
+<!-- 						</b:Row>						 -->
+<!-- 					</b:Jumbotron> -->
+<!-- 				</b:Column> -->
 				
 <!-- 			2nd square -->				
-				<b:Column size="SM_2">
-					<b:Jumbotron addStyleNames="{style.upperSquares}">
-						<b:Row>
-							<b:Heading alignment="CENTER" size="H1" text="15" color="white"/>
-						</b:Row>
-						<b:Row>
-							<b:Heading alignment="CENTER" size="H5" text="Open Alerts" addStyleNames="{style.upperSquaresDescriptions}"/>
-						</b:Row>						
-					</b:Jumbotron>
-				</b:Column>
+<!-- 				<b:Column size="SM_2"> -->
+<!-- 					<b:Jumbotron addStyleNames="{style.upperSquares}"> -->
+<!-- 						<b:Row> -->
+<!-- 							<b:Heading alignment="CENTER" size="H1" text="15" color="white"/> -->
+<!-- 						</b:Row> -->
+<!-- 						<b:Row> -->
+<!-- 							<b:Heading alignment="CENTER" size="H5" text="Open Alerts" addStyleNames="{style.upperSquaresDescriptions}"/> -->
+<!-- 						</b:Row>						 -->
+<!-- 					</b:Jumbotron> -->
+<!-- 				</b:Column> -->
 				
 <!-- 			3rd square -->					
-				<b:Column size="SM_2">
-					<b:Jumbotron addStyleNames="{style.upperSquares}">
-						<b:Row>
-							<b:Heading alignment="CENTER" size="H1" text="3" color="white"/>
-						</b:Row>
-						<b:Row>
-							<b:Heading alignment="CENTER" size="H5" text="Urgent Open Alerts" addStyleNames="{style.upperSquaresDescriptions}"/>
-						</b:Row>						
-					</b:Jumbotron>
-				</b:Column>
+<!-- 				<b:Column size="SM_2"> -->
+<!-- 					<b:Jumbotron addStyleNames="{style.upperSquares}"> -->
+<!-- 						<b:Row> -->
+<!-- 							<b:Heading alignment="CENTER" size="H1" text="3" color="white"/> -->
+<!-- 						</b:Row> -->
+<!-- 						<b:Row> -->
+<!-- 							<b:Heading alignment="CENTER" size="H5" text="Urgent Open Alerts" addStyleNames="{style.upperSquaresDescriptions}"/> -->
+<!-- 						</b:Row>						 -->
+<!-- 					</b:Jumbotron> -->
+<!-- 				</b:Column> -->
 				
 <!-- 			4th square -->						
-				<b:Column size="SM_2">
-					<b:Jumbotron addStyleNames="{style.upperSquares}">
-						<b:Row>
-							<b:Heading alignment="CENTER" size="H1" text="32" color="white"/>
-						</b:Row>
-						<b:Row>
-							<b:Heading alignment="CENTER" size="H5" text="Alerts Handled past 7 days" addStyleNames="{style.upperSquaresDescriptions}"/>
-						</b:Row>						
-					</b:Jumbotron>
-				</b:Column>
+<!-- 				<b:Column size="SM_2"> -->
+<!-- 					<b:Jumbotron addStyleNames="{style.upperSquares}"> -->
+<!-- 						<b:Row> -->
+<!-- 							<b:Heading alignment="CENTER" size="H1" text="32" color="white"/> -->
+<!-- 						</b:Row> -->
+<!-- 						<b:Row> -->
+<!-- 							<b:Heading alignment="CENTER" size="H5" text="Alerts Handled past 7 days" addStyleNames="{style.upperSquaresDescriptions}"/> -->
+<!-- 						</b:Row>						 -->
+<!-- 					</b:Jumbotron> -->
+<!-- 				</b:Column> -->
 				
 <!-- 			5th square -->						
-				<b:Column size="SM_2">
-					<b:Jumbotron addStyleNames="{style.upperSquares}">
-						<b:Row>
-							<b:Heading alignment="CENTER" size="H1" text="15" color="white"/>
-						</b:Row>
-						<b:Row>
-							<b:Heading alignment="CENTER" size="H5" text="Customers retained past 30 days" addStyleNames="{style.upperSquaresDescriptions}"/>
-						</b:Row>						
-					</b:Jumbotron>
-				</b:Column>
+<!-- 				<b:Column size="SM_2"> -->
+<!-- 					<b:Jumbotron addStyleNames="{style.upperSquares}"> -->
+<!-- 						<b:Row> -->
+<!-- 							<b:Heading alignment="CENTER" size="H1" text="15" color="white"/> -->
+<!-- 						</b:Row> -->
+<!-- 						<b:Row> -->
+<!-- 							<b:Heading alignment="CENTER" size="H5" text="Customers retained past 30 days" addStyleNames="{style.upperSquaresDescriptions}"/> -->
+<!-- 						</b:Row>						 -->
+<!-- 					</b:Jumbotron> -->
+<!-- 				</b:Column> -->
 				
 <!-- 			6th square -->						
-				<b:Column size="SM_2">
-					<b:Jumbotron addStyleNames="{style.upperSquares}">
-						<b:Row>
-							<b:Heading alignment="CENTER" size="H1" text="69" color="white"/>
-						</b:Row>
-						<b:Row>
-							<b:Heading alignment="CENTER" size="H5" text="Customers retained past 90 days" addStyleNames="{style.upperSquaresDescriptions}"/>
-						</b:Row>						
-					</b:Jumbotron>
-				</b:Column>					
+<!-- 				<b:Column size="SM_2"> -->
+<!-- 					<b:Jumbotron addStyleNames="{style.upperSquares}"> -->
+<!-- 						<b:Row> -->
+<!-- 							<b:Heading alignment="CENTER" size="H1" text="69" color="white"/> -->
+<!-- 						</b:Row> -->
+<!-- 						<b:Row> -->
+<!-- 							<b:Heading alignment="CENTER" size="H5" text="Customers retained past 90 days" addStyleNames="{style.upperSquaresDescriptions}"/> -->
+<!-- 						</b:Row>						 -->
+<!-- 					</b:Jumbotron> -->
+<!-- 				</b:Column>					 -->
 																							
 		
 			</b:Row>	
 				
+<!-- 				MID PANEL -->
+
+				<b:Row>
+					<b:Column size = "SM_8">
+						<b:Panel >						
+							<b:PanelBody>							
+								
+<!-- 								<b:Breadcrumbs pull="RIGHT"> -->
+<!-- 								  <b:AnchorListItem text="This week"/> -->
+<!-- 								  <b:AnchorListItem text="This month"/> -->
+<!-- 								  <b:AnchorListItem text="This year"/> -->
+<!-- 								</b:Breadcrumbs> -->
+								<b:Heading size="H3" text="Targets"/>
+									<b:Heading size="H5" text="Target bar #1">
+									  <b:Icon type="CHECK" pull="RIGHT" size="LARGE"/>
+									</b:Heading>
+									<b:Progress>								
+										<b:ProgressBar type="SUCCESS" percent="100" text="100 / 100"/>										
+									</b:Progress>															
+									<b:Heading size="H5" text="Target bar #2">
+<!-- 									  <b:Icon type="THUMBS_UP" pull="RIGHT" size="LARGE"/> -->
+									</b:Heading>
+									<b:Progress>								
+										<b:ProgressBar type="SUCCESS" percent="85" text="130 / 150"/>
+									</b:Progress>
+									<b:Heading size="H5" text="Target bar #3">
+									  <b:Icon type="WARNING" pull="RIGHT" size="LARGE"/>
+									</b:Heading>
+									<b:Progress>								
+										<b:ProgressBar type="DANGER" percent="20" text="4 / 20"/>
+									</b:Progress>
+									<b:Heading size="H5" text="Target bar #4">
+<!-- 									  <b:Icon type="WARNING" pull="RIGHT" size="LARGE"/> -->
+									</b:Heading>
+									<b:Progress>								
+										<b:ProgressBar type="WARNING" percent="45" text="32 / 70"/>
+									</b:Progress>
+<!-- 									<b:Heading size="H5" text="Target bar #5"/>	 -->
+<!-- 									<b:Progress>								 -->
+<!-- 										<b:ProgressBar type="SUCCESS" percent="87" text="32 / 70"/> -->
+<!-- 									</b:Progress>																																						 -->
+							</b:PanelBody>														
+						</b:Panel>
+					</b:Column>
+					<b:Column size = "SM_4">
+						<b:Panel >						
+							<b:PanelBody>	
+
+							
+							
+													
+								<b:Heading size="H4" text="4 Most Important Alerts with Recommended Actions"/>
+								<b:MediaList>
+									<b:ListItem >
+										<b:Icon type="USER" pull="LEFT" size="TIMES3"/>
+										<b:MediaBody addStyleNames="{style.topUrgentMidPanel}">
+											<b:Heading size="H4" text="Customer #1"/>
+											<b.html:Paragraph>Recommended action: Call</b.html:Paragraph>
+										</b:MediaBody>
+									</b:ListItem>
+									<b:ListItem >
+										<b:Icon type="USER" pull="LEFT" size="TIMES3"/>
+										<b:MediaBody addStyleNames="{style.topUrgentMidPanel}">
+											<b:Heading size="H4" text="Customer #1"/>
+											<b.html:Paragraph>Recommended action: Send Personal Email with Gift Card</b.html:Paragraph>
+										</b:MediaBody>
+									</b:ListItem>
+									<b:ListItem >
+										<b:Icon type="USER" pull="LEFT" size="TIMES3"/>
+										<b:MediaBody addStyleNames="{style.topUrgentMidPanel}">
+											<b:Heading size="H4" text="Customer #1"/>
+											<b.html:Paragraph>Recommended action: Call</b.html:Paragraph>
+										</b:MediaBody>
+									</b:ListItem>
+									<b:ListItem >
+										<b:Icon type="USER" pull="LEFT" size="TIMES3"/>
+										<b:MediaBody addStyleNames="{style.topUrgentMidPanel}">
+											<b:Heading size="H4" text="Customer #1"/>
+											<b.html:Paragraph>Recommended action: Call</b.html:Paragraph>
+										</b:MediaBody>
+									</b:ListItem>
+<!-- 									<b:ListItem > -->
+<!-- 										<b:Icon type="USER" pull="LEFT" size="TIMES3"/> -->
+<!-- 										<b:MediaBody addStyleNames="{style.topUrgentMidPanel}"> -->
+<!-- 											<b:Heading size="H5" text="Customer #1"/> -->
+<!-- 											<b.html:Paragraph>Recommended action: Call</b.html:Paragraph> -->
+<!-- 										</b:MediaBody> -->
+<!-- 									</b:ListItem>																																																			 -->
+								</b:MediaList>
+																																	
+							</b:PanelBody>														
+						</b:Panel>
+					</b:Column>					
+				</b:Row>
 				
 <!-- 				LOWER PANEL -->
 				<b:Row addStyleNames="{style.column}">	
