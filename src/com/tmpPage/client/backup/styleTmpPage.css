@@ -1,0 +1,18 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	background-color:rgba(0,0,0,0.1);
+}
+
+.column{
+	border:1px solid black;
+}
+
+.containerPageOne{
+	margin-top:10em;
+/* 	border:1px solid green; */
+}
+
+.input{
+	background-color:white;
+}

@@ -1,0 +1,39 @@
+@CHARSET "ISO-8859-1";
+
+.alert-text-unhandled{
+	color:#FB2A34;
+	vertical-align: middle !important;
+}
+
+.alert-text-handled{
+	color:#00a65a;
+	vertical-align: middle !important;
+}
+
+.alert-text-no-reponse{
+	color:#f39c12;
+	vertical-align: middle !important;
+}
+	
+.cell-Table-col-non-alert{
+	color:black;
+	vertical-align: middle !important;
+/* 	padding-top:10px !important; */
+/* 	padding-bottom:10px !important; */
+}
+
+.cell-Table-col-alert{
+	vertical-align: middle !important;
+/* 	padding-top:10px !important; */
+/* 	padding-bottom:10px !important;	 */
+}
+
+.active-breadcrumb{
+	color:black !important;
+}
+
+.inactive-breadcrumb{
+
+}
+
+

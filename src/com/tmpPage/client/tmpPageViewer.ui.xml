@@ -1,0 +1,293 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:b="urn:import:org.gwtbootstrap3.client.ui"
+             xmlns:b.html="urn:import:org.gwtbootstrap3.client.ui.html"
+             xmlns:b.gwt="urn:import:org.gwtbootstrap3.client.ui.gwt"
+	         xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style src="styleTmpPage.css" />	
+	<b:Container fluid="true" addStyleNames="{style.containerPageOne}">
+
+<!-- PAGE TITLE -->
+		<b:Row addStyleNames="{style.column}">
+			<b:Column size = "SM_12">
+				<b:Heading size="H1" alignment="LEFT" text="Alert List"/>
+			</b:Column> 
+		</b:Row>	
+		
+		
+		<b:Row>
+			<b:Column size="SM_3" >
+				<b:Well addStyleNames="{style.upperWell}">
+					<b:Row addStyleNames="{style.insideWell}">
+					<b:Column size="SM_3" addStyleNames="{style.leftBoxInWell}">
+						<b:Icon type="FLAG" size="TIMES3" inverse="true" addStyleNames="{style.iconInWell}" />
+					</b:Column>
+					<b:Column size="SM_9" addStyleNames="{style.rightBoxInWell}">
+						<b:Heading size="H1" alignment="CENTER" text="3"/>
+						<b:Heading size="H5" alignment="CENTER" text="New alerts the past 7 days"/>
+					</b:Column>
+					</b:Row>
+				</b:Well>
+			</b:Column>
+			<b:Column size="SM_3" >
+				<b:Well addStyleNames="{style.upperWell}">
+					<b:Row addStyleNames="{style.insideWell}">
+					<b:Column size="SM_3" addStyleNames="{style.leftBoxInWell}">
+						<b:Icon type="WARNING" size="TIMES3" inverse="true" addStyleNames="{style.iconInWell}" />
+					</b:Column>
+					<b:Column size="SM_9" addStyleNames="{style.rightBoxInWell}">
+						<b:Heading size="H1" alignment="CENTER" text="11"/>
+						<b:Heading size="H5" alignment="CENTER" text="Unhandled Alerts"/>
+					</b:Column>
+					</b:Row>
+				</b:Well>
+			</b:Column>
+			<b:Column size="SM_3" >
+				<b:Well addStyleNames="{style.upperWell}">
+					<b:Row addStyleNames="{style.insideWell}">
+					<b:Column size="SM_3" addStyleNames="{style.leftBoxInWell}">
+						<b:Icon type="CHECK" size="TIMES3" inverse="true" addStyleNames="{style.iconInWell}" />
+					</b:Column>
+					<b:Column size="SM_9" addStyleNames="{style.rightBoxInWell}">
+						<b:Heading size="H1" alignment="CENTER" text="3"/>
+						<b:Heading size="H5" alignment="CENTER" text="Alerts handled past 7 days"/>
+					</b:Column>
+					</b:Row>
+				</b:Well>
+			</b:Column>
+			<b:Column size="SM_3" >
+				<b:Well addStyleNames="{style.upperWell}">
+					<b:Row addStyleNames="{style.insideWell}">
+					<b:Column size="SM_3" addStyleNames="{style.leftBoxInWell}">
+						<b:Icon type="THUMBS_UP" size="TIMES3" inverse="true" addStyleNames="{style.iconInWell}" />
+					</b:Column>
+					<b:Column size="SM_9" addStyleNames="{style.rightBoxInWell}">
+						<b:Heading size="H1" alignment="CENTER" text="69"/>
+						<b:Heading size="H5" alignment="CENTER" text="Customers retained past 30 days"/>
+					</b:Column>
+					</b:Row>
+				</b:Well>
+			</b:Column>									
+		</b:Row>
+
+		
+	<!-- 				UPPER PART -->	
+		<b:Row addStyleNames="{style.column}">		
+<!-- 			1st square -->
+<!-- 				<b:Column size="SM_2"  > -->
+<!-- 					<b:Jumbotron addStyleNames="{style.upperSquares}"> -->
+<!-- 						<b:Row> -->
+<!-- 							<b:Heading size="H1" alignment="CENTER" text="22" color="white"/> -->
+<!-- 						</b:Row> -->
+<!-- 						<b:Row> -->
+<!-- 							<b:Heading size="H5" alignment="CENTER" text="New alerts the past 7 days" addStyleNames="{style.upperSquaresDescriptions}"/> -->
+<!-- 						</b:Row>						 -->
+<!-- 					</b:Jumbotron> -->
+<!-- 				</b:Column> -->
+				
+<!-- 			2nd square -->				
+<!-- 				<b:Column size="SM_2"> -->
+<!-- 					<b:Jumbotron addStyleNames="{style.upperSquares}"> -->
+<!-- 						<b:Row> -->
+<!-- 							<b:Heading alignment="CENTER" size="H1" text="15" color="white"/> -->
+<!-- 						</b:Row> -->
+<!-- 						<b:Row> -->
+<!-- 							<b:Heading alignment="CENTER" size="H5" text="Open Alerts" addStyleNames="{style.upperSquaresDescriptions}"/> -->
+<!-- 						</b:Row>						 -->
+<!-- 					</b:Jumbotron> -->
+<!-- 				</b:Column> -->
+				
+<!-- 			3rd square -->					
+<!-- 				<b:Column size="SM_2"> -->
+<!-- 					<b:Jumbotron addStyleNames="{style.upperSquares}"> -->
+<!-- 						<b:Row> -->
+<!-- 							<b:Heading alignment="CENTER" size="H1" text="3" color="white"/> -->
+<!-- 						</b:Row> -->
+<!-- 						<b:Row> -->
+<!-- 							<b:Heading alignment="CENTER" size="H5" text="Urgent Open Alerts" addStyleNames="{style.upperSquaresDescriptions}"/> -->
+<!-- 						</b:Row>						 -->
+<!-- 					</b:Jumbotron> -->
+<!-- 				</b:Column> -->
+				
+<!-- 			4th square -->						
+<!-- 				<b:Column size="SM_2"> -->
+<!-- 					<b:Jumbotron addStyleNames="{style.upperSquares}"> -->
+<!-- 						<b:Row> -->
+<!-- 							<b:Heading alignment="CENTER" size="H1" text="32" color="white"/> -->
+<!-- 						</b:Row> -->
+<!-- 						<b:Row> -->
+<!-- 							<b:Heading alignment="CENTER" size="H5" text="Alerts Handled past 7 days" addStyleNames="{style.upperSquaresDescriptions}"/> -->
+<!-- 						</b:Row>						 -->
+<!-- 					</b:Jumbotron> -->
+<!-- 				</b:Column> -->
+				
+<!-- 			5th square -->						
+<!-- 				<b:Column size="SM_2"> -->
+<!-- 					<b:Jumbotron addStyleNames="{style.upperSquares}"> -->
+<!-- 						<b:Row> -->
+<!-- 							<b:Heading alignment="CENTER" size="H1" text="15" color="white"/> -->
+<!-- 						</b:Row> -->
+<!-- 						<b:Row> -->
+<!-- 							<b:Heading alignment="CENTER" size="H5" text="Customers retained past 30 days" addStyleNames="{style.upperSquaresDescriptions}"/> -->
+<!-- 						</b:Row>						 -->
+<!-- 					</b:Jumbotron> -->
+<!-- 				</b:Column> -->
+				
+<!-- 			6th square -->						
+<!-- 				<b:Column size="SM_2"> -->
+<!-- 					<b:Jumbotron addStyleNames="{style.upperSquares}"> -->
+<!-- 						<b:Row> -->
+<!-- 							<b:Heading alignment="CENTER" size="H1" text="69" color="white"/> -->
+<!-- 						</b:Row> -->
+<!-- 						<b:Row> -->
+<!-- 							<b:Heading alignment="CENTER" size="H5" text="Customers retained past 90 days" addStyleNames="{style.upperSquaresDescriptions}"/> -->
+<!-- 						</b:Row>						 -->
+<!-- 					</b:Jumbotron> -->
+<!-- 				</b:Column>					 -->
+																							
+		
+			</b:Row>	
+				
+<!-- 				MID PANEL -->
+
+				<b:Row>
+					<b:Column size = "SM_8">
+						<b:Panel type="PRIMARY" addStyleNames="{style.panelStyle}">
+						<b:PanelHeader>
+							<b:Heading size="H3">
+								<b:Anchor text="Targets"/>
+								<b:Anchor pull="RIGHT" dataToggle="COLLAPSE" dataTarget="#TargetPanelCollapse" icon="WINDOW_MINIMIZE" ui:field="icon_up_down"/>
+							</b:Heading>
+						</b:PanelHeader>
+						<b:PanelCollapse b:id="TargetPanelCollapse" in="true" ui:field="collapseOne">											
+							<b:PanelBody>							
+								<b:Row >
+<!-- 									<b:Breadcrumbs addStyleNames="{style.panelBreadcrumbs}"> -->
+<!-- 									  <b:AnchorListItem text="Weekly" ui:field="WeeklyTarget" active="true" addStyleNames="{style.panelBreadcrumbsItem}"/> -->
+<!-- 									  <b:AnchorListItem text="Monthly" ui:field="MonthlyTarget" addStyleNames="{style.panelBreadcrumbsItem}"/> -->
+<!-- 									  <b:AnchorListItem text="Annually" ui:field="AnnuallyTarget" addStyleNames="{style.panelBreadcrumbsItem}"/> -->
+<!-- 									</b:Breadcrumbs> -->
+									<b:NavTabs>
+										<b:TabListItem text="Weekly" ui:field="WeeklyTarget" active="true" addStyleNames="{style.panelBreadcrumbsItem}"/>
+										<b:TabListItem text="Monthly" ui:field="MonthlyTarget" addStyleNames="{style.panelBreadcrumbsItem}"/>
+										<b:TabListItem text="Annually" ui:field="AnnuallyTarget" addStyleNames="{style.panelBreadcrumbsItem}"/>
+									</b:NavTabs>								
+								</b:Row >								
+									<b:Heading size="H5" text="Customer Retained" addStyleNames="{style.noHoverOrLink}">					
+									  <b:Anchor text="15 / 15" pull="RIGHT" icon="CHECK" iconPosition="RIGHT" addStyleNames="{style.noHoverOrLink}" ui:field="targetBar1Text"/>
+									</b:Heading>
+									<b:Progress>								
+										<b:ProgressBar type="SUCCESS" percent="100" ui:field="targetBar1"/>										
+									</b:Progress>															
+									<b:Heading size="H5" text="Alerts Handled" addStyleNames="{style.noHoverOrLink}" >
+										<b:Anchor  text="17 / 20" pull="RIGHT" addStyleNames="{style.noHoverOrLink}" ui:field="targetBar2Text"/>
+									</b:Heading>
+									<b:Progress>								
+										<b:ProgressBar type="SUCCESS" percent="85" ui:field="targetBar2"/>
+									</b:Progress>
+									<b:Heading size="H5" text="Urgent Alerts Handled" addStyleNames="{style.noHoverOrLink}" >
+									  <b:Anchor text="2 / 10" pull="RIGHT"  addStyleNames="{style.noHoverOrLink}" ui:field="targetBar3Text"/>
+									</b:Heading>
+									<b:Progress>								
+										<b:ProgressBar type="WARNING" percent="25" ui:field="targetBar3"/>
+									</b:Progress>
+									<b:Heading size="H5" text="High Attention Alert Handled" addStyleNames="{style.noHoverOrLink}" >
+										<b:Anchor text="1 / 5" pull="RIGHT" icon="WARNING" iconPosition="RIGHT" addStyleNames="{style.noHoverOrLink}" ui:field="targetBar4Text"/>	
+									</b:Heading>
+								<b:Progress>								
+									<b:ProgressBar type="WARNING" percent="20" ui:field="targetBar4"/>
+								</b:Progress>
+<!-- 									<b:Heading size="H5" text="Target bar #5"/>	 -->
+<!-- 									<b:Progress>								 -->
+<!-- 										<b:ProgressBar type="SUCCESS" percent="87" text="32 / 70"/> -->
+<!-- 									</b:Progress>																																						 -->
+							</b:PanelBody>
+							</b:PanelCollapse>																
+						</b:Panel>
+					</b:Column>
+					
+<!-- 					LEFT MID PANEL -->
+					<b:Column size = "SM_4">
+						<b:Panel type="PRIMARY" addStyleNames="{style.panelStyle}">
+						<b:PanelHeader>
+							<b:Heading size="H3">
+								<b:Anchor text="Top 5 Recommended Alerts"/>
+								<b:Anchor pull="RIGHT" dataToggle="COLLAPSE" dataTarget="#top5PanelCollapse" icon="WINDOW_MINIMIZE" ui:field="icon_up_down_top5"/>
+							</b:Heading>
+						</b:PanelHeader>
+						<b:PanelCollapse b:id="top5PanelCollapse" in="true" ui:field="collapseTop5">
+							<b:PanelBody>											
+								<b:MediaList>
+									<b:ListItem >
+										<b:Icon type="USER" pull="LEFT" size="TIMES3"/>
+										<b:MediaBody addStyleNames="{style.topUrgentMidPanel}">
+											<b:Heading size="H4" text="Sundbyoster Skolefritidshjem" />
+											<b:Heading size="H5" >
+												<b:Anchor text="Recommended Action: " addStyleNames="{style.noHoverOrLink}"/>
+												<b:Tooltip placement="BOTTOM">
+													<b:Anchor icon="PHONE" iconPosition="LEFT" title="Make a personal call" iconSize="LARGE" addStyleNames="{style.noHoverOrLink}"/>
+												</b:Tooltip>
+											</b:Heading>
+<!-- 											<b.html:Paragraph>Recommended action: Call</b.html:Paragraph> -->
+										</b:MediaBody>
+									</b:ListItem>
+									<b:ListItem >
+										<b:Icon type="USER" pull="LEFT" size="TIMES3"/>
+										<b:MediaBody addStyleNames="{style.topUrgentMidPanel}">
+											<b:Heading size="H4" text="JNF Momentum Koge A/S" />
+											<b:Heading size="H5" >
+												<b:Anchor text="Recommended Action: " addStyleNames="{style.noHoverOrLink}"/>
+												<b:Tooltip placement="BOTTOM">
+													<b:Anchor icon="PHONE" iconPosition="LEFT" title="Make a personal call" iconSize="LARGE" addStyleNames="{style.noHoverOrLink}"/>
+												</b:Tooltip>
+											</b:Heading>
+										</b:MediaBody>
+									</b:ListItem>
+									<b:ListItem >
+										<b:Icon type="USER" pull="LEFT" size="TIMES3"/>
+										<b:MediaBody addStyleNames="{style.topUrgentMidPanel}">
+											<b:Heading size="H4" text="Master International" />
+											<b:Heading size="H5" >
+												<b:Anchor text="Recommended Action: " addStyleNames="{style.noHoverOrLink}"/>
+												<b:Tooltip placement="BOTTOM">
+													<b:Anchor icon="PHONE" iconPosition="LEFT" title="Make a personal call" iconSize="LARGE" addStyleNames="{style.noHoverOrLink}"/>
+												</b:Tooltip>
+											</b:Heading>
+										</b:MediaBody>
+									</b:ListItem>
+									<b:ListItem >
+										<b:Icon type="USER" pull="LEFT" size="TIMES3"/>
+										<b:MediaBody addStyleNames="{style.topUrgentMidPanel}">
+											<b:Heading size="H4" text="Sydkystens Kranservice ApS" />
+											<b:Heading size="H5" >
+												<b:Anchor text="Recommended Action: " addStyleNames="{style.noHoverOrLink}"/>
+												<b:Tooltip placement="BOTTOM">
+													<b:Anchor icon="PHONE" iconPosition="LEFT" title="Make a personal call" iconSize="LARGE" addStyleNames="{style.noHoverOrLink}"/>
+												</b:Tooltip>
+											</b:Heading>
+										</b:MediaBody>
+									</b:ListItem>
+									<b:ListItem >
+										<b:Icon type="USER" pull="LEFT" size="TIMES3"/>
+										<b:MediaBody addStyleNames="{style.topUrgentMidPanel}">
+											<b:Heading size="H4" text="CF ApS" />
+											<b:Heading size="H5" >
+												<b:Anchor text="Recommended Action: " addStyleNames="{style.noHoverOrLink}"/>
+												<b:Tooltip placement="BOTTOM">
+													<b:Anchor icon="GIFT" iconPosition="LEFT" title="Send a giftcard by Email" iconSize="LARGE" addStyleNames="{style.noHoverOrLink}"/>
+												</b:Tooltip>
+											</b:Heading>	
+										</b:MediaBody>
+									</b:ListItem>									
+								</b:MediaList>
+							</b:PanelBody>
+							</b:PanelCollapse>
+<!-- 							</b:Collapse>														 -->
+						</b:Panel>
+					</b:Column>					
+				</b:Row>
+
+	</b:Container>				
+
+
+</ui:UiBinder> 
